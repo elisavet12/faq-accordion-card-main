@@ -1,50 +1,5 @@
-// function myFunction() {
-//     var x = document.querySelectorAll("test");
-//     if (x.style.display === "none") {
-//       x.style.display = "block";
-//     } else {
-//       x.style.display = "none";
-//     }
-//   }
 
-//   function myFunction() {
-//     var x = document.getElementById("answer2");
-//     if (x.style.display === "none") {
-//       x.style.display = "block";
-//     } else {
-//       x.style.display = "none";
-//     }
-//   }
-
-//   function myFunction() {
-//     var x = document.getElementById("answer3");
-//     if (x.style.display === "none") {
-//       x.style.display = "block";
-//     } else {
-//       x.style.display = "none";
-//     }
-//   }
-
-//   function myFunction() {
-//     var x = document.getElementById("answer4");
-//     if (x.style.display === "none") {
-//       x.style.display = "block";
-//     } else {
-//       x.style.display = "none";
-//     }
-//   }
-
-//   function myFunction() {
-//     var x = document.getElementById("answer5");
-//     if (x.style.display === "none") {
-//       x.style.display = "block";
-//     } else {
-//       x.style.display = "none";
-//     }
-//   }
-
-
-var acc = document.getElementsByClassName("question");
+var acc = document.getElementsByClassName("questions");
 var i;
 
 for (i = 0; i < acc.length; i++) {

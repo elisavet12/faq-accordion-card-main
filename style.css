@@ -21,40 +21,73 @@
 body {
 font-family: 'Kumbh Sans', sans-serif;
 font-size: 12px;
-
+color: var(--Very-dark-grayish-blue);
 background-image: linear-gradient(to bottom left, var(--Soft-violet), var(--Soft-blue));
-
+height: 100vh;
+/* width: 100%; */
+/* overflow: hidden; */
+display: flex;
+align-items: center;
+flex-direction: column;
+justify-content: center;
 }
 
 #container {
-    max-width: ;
-    width: 100%;
-    margin: 0 auto;
-    margin-top: 5vh;
-    box-sizing: border-box;
-    background-image: url(./images/bg-pattern-desktop.svg);
-background-repeat: no-repeat;
+max-width:921px ;
+/* width: 100%; */
+margin: 0 auto;
+margin-top: 5vh;
+box-sizing: border-box;
+/* background-image: url(./images/bg-pattern-desktop.svg);
+background-repeat: no-repeat; */
 
-    
-    
-    
+padding: 6rem 0;
+place-content: center;
 }
 
-.question {
-    background-color: #eee;
-    color: #444;
+
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  /* margin-top: 86px;
+  margin-bottom: 86px; */
+  background-color: white;
+  border-radius: 20px;
+  align-items: center;
+}
+
+.card-img {
+  background-image: url(./images/bg-pattern-desktop.svg);
+background-repeat: no-repeat;
+}
+
+.questions {
+    background-color: white;
+    color: var(--Dark-grayish-blue);
     cursor: pointer;
     padding: 18px;
     width: 100%;
+    max-width: 352px;
     border: none;
     text-align: left;
     outline: none;
-    font-size: 15px;
+    font-size: 14px;
     transition: 0.4s;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+  }
+
+  .questions:hover{
+    color: var(--Soft-red);
+    cursor: pointer;
   }
   
   .active, .accordion:hover {
-    background-color: #ccc; 
+    background-color: white; 
+   color: var(--Very-dark-desaturated-blue);
   }
   
   .answer {
@@ -62,4 +95,26 @@ background-repeat: no-repeat;
     display: none;
     background-color: white;
     overflow: hidden;
+    
+  }
+
+  .answer-p {
+    width: 45ch;
+    display: inline-block;
+  }
+
+  
+
+  .card-title {
+    font-size: 30px;
+    padding: 18px
+  }
+
+  .question {
+    font-size: ;
+  }
+
+  .card-question {
+    display: flex;
+    flex-direction: column;
   }
