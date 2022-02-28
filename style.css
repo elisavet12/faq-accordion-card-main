@@ -26,7 +26,7 @@ background-image: linear-gradient(to bottom left, var(--Soft-violet), var(--Soft
 height: 100vh;
 /* width: 100%; */
 /* overflow: hidden; */
-display: flex;
+/* display: flex; */
 align-items: center;
 flex-direction: column;
 justify-content: center;
@@ -36,13 +36,24 @@ justify-content: center;
 max-width:921px ;
 /* width: 100%; */
 margin: 0 auto;
-margin-top: 5vh;
+/* margin-top: 5vh; */
 box-sizing: border-box;
 /* background-image: url(./images/bg-pattern-desktop.svg);
 background-repeat: no-repeat; */
 
-padding: 6rem 0;
+/* padding: 6rem 0; */
 place-content: center;
+
+}
+
+#container::before {
+  content: url(./images/illustration-box-desktop.svg);
+  background-repeat: no-repeat;
+  position: relative;
+    top: 405px;
+    z-index: 1;
+    right: 97px;
+    
 }
 
 
@@ -54,12 +65,21 @@ place-content: center;
   margin-bottom: 86px; */
   background-color: white;
   border-radius: 20px;
-  align-items: center;
+  /* align-items: center; */
 }
 
 .card-img {
   background-image: url(./images/bg-pattern-desktop.svg);
 background-repeat: no-repeat;
+background-size: 518px;
+    background-position: -110px 88px
+}
+
+.image {
+  position: relative;
+  right: 80px;
+  top: 100px;
+    
 }
 
 .questions {
@@ -117,4 +137,13 @@ background-repeat: no-repeat;
   .card-question {
     display: flex;
     flex-direction: column;
+  }
+
+  @media only screen and (max-width: 1124px) {
+
+    .card {
+      grid-template-columns: 1fr;
+      justify-content: center;
+    justify-items: center;
+    }
   }
