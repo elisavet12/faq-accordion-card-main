@@ -23,13 +23,15 @@ font-family: 'Kumbh Sans', sans-serif;
 font-size: 12px;
 color: var(--Very-dark-grayish-blue);
 background-image: linear-gradient(to bottom left, var(--Soft-violet), var(--Soft-blue));
-height: 100vh;
+/* height: 100vh; */ 
 /* width: 100%; */
 /* overflow: hidden; */
 /* display: flex; */
-align-items: center;
+/* align-items: center;
 flex-direction: column;
 justify-content: center;
+margin: 0 auto;
+place-content: center; */
 }
 
 #container {
@@ -41,18 +43,23 @@ box-sizing: border-box;
 /* background-image: url(./images/bg-pattern-desktop.svg);
 background-repeat: no-repeat; */
 
-/* padding: 6rem 0; */
+padding: 6rem 0;
 place-content: center;
 
 }
 
-#container::before {
-  content: url(./images/illustration-box-desktop.svg);
+#container::after {
+  content: "";
+  background-image: url(./images/illustration-box-desktop.svg);
   background-repeat: no-repeat;
   position: relative;
-    top: 405px;
+    top: -282px;
     z-index: 1;
     right: 97px;
+    width: 200px;
+    height: 200px;
+    background-size: 100% 100%;
+    display: inline-block;
     
 }
 
@@ -75,6 +82,13 @@ background-size: 518px;
     background-position: -110px 88px
 }
 
+.card-img::before {
+  content: url(./images/illustration-woman-online-desktop.svg);
+  position: relative;
+  right: 80px;
+  top: 100px;
+}
+
 .image {
   position: relative;
   right: 80px;
@@ -86,7 +100,7 @@ background-size: 518px;
     background-color: white;
     color: var(--Dark-grayish-blue);
     cursor: pointer;
-    padding: 18px;
+    padding: 10px;
     width: 100%;
     max-width: 352px;
     border: none;
@@ -146,4 +160,44 @@ background-size: 518px;
       justify-content: center;
     justify-items: center;
     }
+
+    .card-img {
+      background-size: 90%;
+    background-position: 14px -197px;
+    display: inline;
+    width: 90%;
+    }
+
+    .card-img::before {
+      content: url(./images/illustration-woman-online-mobile.svg);
+      right: -9%;
+    top: -59%;
+    display: inline;
+    width: 80%;
+    }
+
+    .image {
+      right: -9%;
+    top: -59%;
+    display: inline;
+    width: 80%;
+    
+    }
+
+    .container {
+      padding: 12rem 0;
+    }
+
+    #container::after {
+    content:none;
+    
+    }
+
+    .card-question {
+      align-items: center;
+    }
+
+    @media only screen and (max-width: 375px)
+
+    {
   }
